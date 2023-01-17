@@ -11,7 +11,14 @@
 
 
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return {
+      //protected assets url base (utile pour les ressources sur stackblitz)
+      //TODO : tenir compte de la prod !
+      pab:'https://factures.anafe.fr/protectedassets'
+    }
+  }
 }
 </script>
 

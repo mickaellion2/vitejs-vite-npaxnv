@@ -21,7 +21,8 @@
 <script>
 import navBarFacturier from "@/components/Controler/backOffice/navBarFacturier.vue";
 import bandeauHautFacturier from "@/components/Controler/backOffice/bandeauHautFacturier.vue";
-import photoProfilDefaut from "@/assets/defautProfil.jpg";
+import App from "@/App.vue"; 
+const photoProfilDefaut = App.data().pab + "/defautProfil.jpg";
 import connexionOPCOService from "@/services/connexionOPCO.service.vue";
 //import configuration from "@/administration/configuration.vue";
 
@@ -86,7 +87,7 @@ export default {
 
 main{
   margin-left: 165px;
-  width: calc(100%- 165px);
+  width: calc(100% - 165px);
 }
 
 header{

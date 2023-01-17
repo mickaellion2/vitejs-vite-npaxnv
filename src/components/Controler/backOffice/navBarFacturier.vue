@@ -2,7 +2,7 @@
   <section class="sidebar">
     <div class="side-header">
       <div class="logo-entreprise">
-        <img :src="this.logoEntreprise" alt="entreprise" >
+        <img :src="this.logoEntreprise" crossOrigin="Anonymous" alt="entreprise" >
       </div>
     </div>
     <div class="side-content">
@@ -83,7 +83,7 @@
               </div>
               <span>
                 <small>Créer un formulaire
-                  <!--bouton-facturier @click="formApprenti = true" class="boutonFacturierRecherche" id="boutonFacturierRechercheApprenti" :intituleBouton="this.$data.nomBoutonApprenti" v-on:click="this.ajouterUnApprenti" style="position: relative;left: 200px;">Maitre</bouton-facturier-->
+                  <!--bouton-base @click="formApprenti = true" class="BoutonBaseRecherche" id="BoutonBaseRechercheApprenti" :intituleBouton="this.$data.nomBoutonApprenti" v-on:click="this.ajouterUnApprenti" style="position: relative;left: 200px;">Maitre</bouton-base-->
                 </small>
                 <!-- pour créer un formulaire spécifique : Maitre, Contrat, Formation, Attestation-->
               </span>
@@ -133,13 +133,13 @@
 </template>
 
 <script>
-import logoEntreprise from '@/assets/vue.svg'
-
+//import logoEntreprise from '#/logo0_small.png'
+import App from "@/App.vue"
 export default {
   name: "navBarFacturier",
   data(){
     return{
-      logoEntreprise:logoEntreprise
+      logoEntreprise:App.data().pab + '/logo0_small.png'
     }
   },
   props:{
