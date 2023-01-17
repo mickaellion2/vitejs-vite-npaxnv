@@ -1,0 +1,56 @@
+export default class Formation{
+  siret;
+  uai_cfa;
+  type_diplome;
+  code_diplome;
+  debut_cycle_formation;
+  fin_cycle_formation;
+  etablissement;
+  adresse;
+  complement_adresse;
+  code_postal;
+  commune;
+  intitule_precis;
+  duree_formation_heures;
+  cfa_entreprise_booleen;
+  code_rncp;
+
+constructor(
+  siret,
+  uai_cfa,
+  type_diplome,
+  code_diplome,
+  debut_cycle_formation,
+  fin_cycle_formation,
+  etablissement,
+  adresse,
+  complement_adresse,
+  code_postal,
+  commune,
+  intitule_precis,
+  duree_formation_heures,
+  cfa_entreprise_booleen,
+  code_rncp
+) {
+  this.siret=siret;
+  this.uai_cfa=uai_cfa;
+  this.type_diplome=type_diplome;
+  this.code_diplome=code_diplome;
+  this.debut_cycle_formation=debut_cycle_formation;
+  this.fin_cycle_formation=fin_cycle_formation;
+  this.etablissement=etablissement;
+  this.adresse=adresse;
+  this.complement_adresse=complement_adresse;
+  this.code_postal=code_postal;
+  this.commune=commune;
+  this.intitule_precis=intitule_precis;
+  this.duree_formation_heures=duree_formation_heures;
+  this.cfa_entreprise_booleen=cfa_entreprise_booleen;
+  this.code_rnc=code_rncp;
+  this.identifiantFormation=null;
+}
+
+modifieIdentifiantFormation(identifiantFormation){
+this.identifiantFormation=identifiantFormation;
+}
+}

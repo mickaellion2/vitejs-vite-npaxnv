@@ -1,8 +1,9 @@
 <script>
 export default {
-  name: "creationJSON.service",
-  methods:{
-    construitJSON(object){
+  name: 'creationJSON.service',
+  methods: {
+    construitJSON(objet) {
+      /*
       let json='{';
       let compteur=0;
       let derniereCase=0;
@@ -34,8 +35,9 @@ export default {
         }
       }
       json+='}';
-      return json;
-    }
-  }
-}
+      return json;*/
+      return JSON.stringify(objet);
+    },
+  },
+};
 </script>
